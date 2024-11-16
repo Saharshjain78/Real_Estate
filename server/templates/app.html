@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Price Prediction</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/client/app.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header text-center">
+                <h1>Real Estate Price Prediction</h1>
+            </div>
+            <div class="card-body">
+                <form id="prediction-form" class="needs-validation" novalidate>
+                    <div class="form-group">
+                        <label for="bhk">BHK:</label>
+                        <input type="number" class="form-control" id="bhk" name="bhk" required>
+                        <div class="invalid-feedback">Please enter the number of BHK.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="bathroom">Bathroom:</label>
+                        <input type="number" class="form-control" id="bathroom" name="bathroom" required>
+                        <div class="invalid-feedback">Please enter the number of bathrooms.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="area">Area (sqft):</label>
+                        <input type="number" class="form-control" id="area" name="area" required>
+                        <div class="invalid-feedback">Please enter the area in square feet.</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Location:</label>
+                        <select id="location" class="form-control" name="location" required>
+                            <!-- Options will be populated by JavaScript -->
+                        </select>
+                        <div class="invalid-feedback">Please select a location.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Get Price</button>
+                </form>
+                <div id="result" class="mt-4"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/client/app.js"></script>
+</body>
+</html>

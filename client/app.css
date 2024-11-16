@@ -1,0 +1,67 @@
+/* app.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e; /* Dark Royal Blue */
+    color: #ffffff; /* White */
+}
+
+.card {
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #16213e; /* Slightly lighter dark blue */
+    border: none;
+}
+
+.card-header {
+    background-color: #0f3460; /* Darker Royal Blue */
+    color: #ffffff; /* White */
+}
+
+.card-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.form-control {
+    background-color: #1a1a2e; /* Dark Royal Blue */
+    color: #ffffff; /* White */
+    border: 1px solid #0f3460; /* Darker Royal Blue */
+}
+
+.form-control:focus {
+    background-color: #1a1a2e; /* Dark Royal Blue */
+    color: #ffffff; /* White */
+    border-color: #e94560; /* Accent color */
+    box-shadow: 0 0 0 0.2rem rgba(233, 69, 96, 0.25); /* Accent color */
+}
+
+.btn-primary {
+    background-color: #e94560; /* Accent color */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #d63447; /* Darker accent color */
+}
+
+#result {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .card-header h1 {
+        font-size: 1.2rem;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    #result {
+        font-size: 1em;
+    }
+}
